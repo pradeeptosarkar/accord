@@ -10,6 +10,24 @@ import { db } from "@/lib/db";
 import { NavigationAction } from "./navigation-action";
 import { NavigationItem } from "./navigation-item";
 
+
+import {
+  ChevronsLeft,
+  MenuIcon,
+  Plus,
+  PlusCircle,
+  Search,
+  Settings,
+  Trash,
+  MessageCircle,
+  Video,
+  CalendarDays,
+  Github,
+  Boxes,
+  Home,
+  GithubIcon
+} from "lucide-react";
+
 export const NavigationSidebar = async () => {
   const profile = await currentProfile();
 
@@ -46,6 +64,76 @@ export const NavigationSidebar = async () => {
           </div>
         ))}
       </ScrollArea>
+
+      <div className="pb-1 mt-auto flex items-center flex-col gap-y-0">
+
+      <a href="" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-1">
+            <div>
+              <PlusCircle></PlusCircle>
+            </div>
+            <div className="">
+              New Document
+            </div>
+          </div>
+        </a>
+
+        <a href="" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-1">
+            <div>
+              <MessageCircle></MessageCircle>
+            </div>
+            <div className="">
+              Start a new chat
+            </div>
+          </div>
+        </a>
+
+        <a href="" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-1">
+            <div>
+              <Video></Video>
+            </div>
+            <div className="">
+              Start a new video call
+            </div>
+          </div>
+        </a>
+
+        <a href="" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-1">
+            <div>
+              <CalendarDays></CalendarDays>
+            </div>
+            <div className="">
+              Your Calendar
+            </div>
+          </div>
+        </a>
+
+        <a href="https://dotpackages.netlify.app/" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-1">
+            <div>
+              <Boxes></Boxes>
+            </div>
+            <div className="">
+              dotPackages Package Manager
+            </div>
+          </div>
+        </a>
+
+        <a href="https://dotread.netlify.app/" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-1">
+            <div>
+              <GithubIcon></GithubIcon>
+            </div>
+            <div className="">
+              dotRead Code Explorer
+            </div>
+          </div>
+        </a>
+      </div>
+
       <div className="pb-3 mt-auto flex items-center flex-col gap-y-4">
         <ModeToggle />
         <UserButton
