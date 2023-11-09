@@ -1,6 +1,21 @@
 import { ChannelType, MemberRole } from "@prisma/client";
 import { redirect } from "next/navigation";
-import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import {
+  Hash, Mic, ShieldAlert, ShieldCheck, ChevronsLeft,
+  MenuIcon,
+  Plus,
+  PlusCircle,
+  Search,
+  Settings,
+  Trash,
+  MessageCircle,
+  Video,
+  CalendarDays,
+  Github,
+  Boxes,
+  Home,
+  GithubIcon
+} from "lucide-react";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -199,6 +214,66 @@ export const ServerSidebar = async ({
             </div>
           </div>
         )}
+      </ScrollArea>
+
+      <ScrollArea className="px-3">
+        <Separator className="bg-zinc-200 dark:bg-zinc-700 rounded-md my-2" />
+        <div className="pb-2 flex h-full flex-col gap-y-0">
+
+          <a href="https://taskify-omega.vercel.app/documents" target="_blank">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <PlusCircle></PlusCircle>
+              </div>
+              <h2 className="text-lg">New Document</h2>
+            </div>
+          </a>
+
+          <a href="" target="_blank">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <MessageCircle></MessageCircle>
+              </div>
+              <h2 className="text-lg">Start a new chat</h2>
+            </div>
+          </a>
+
+          <a href="" target="_blank">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <Video></Video>
+              </div>
+              <h2 className="text-lg">Start a new video call</h2>
+            </div>
+          </a>
+
+          <a href="" target="_blank">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <CalendarDays></CalendarDays>
+              </div>
+              <h2 className="text-lg">Your Calendar</h2>
+            </div>
+          </a>
+
+          <a href="https://dotpackages.netlify.app/" target="_blank">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <Boxes></Boxes>
+              </div>
+              <h2 className="text-lg">Package Manager</h2>
+            </div>
+          </a>
+
+          <a href="https://dotread.netlify.app/" target="_blank">
+            <div className="flex flex-row gap-x-2 items-center">
+              <div>
+                <GithubIcon></GithubIcon>
+              </div>
+              <h2 className="text-lg">Code Explorer</h2>
+            </div>
+          </a>
+        </div>
       </ScrollArea>
     </div>
   )
