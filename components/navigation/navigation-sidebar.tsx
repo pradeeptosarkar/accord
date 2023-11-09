@@ -65,10 +65,10 @@ export const NavigationSidebar = async () => {
         ))}
       </ScrollArea>
 
-      <div className="pb-1 mt-auto flex items-center flex-col gap-y-0">
+      <div className="pb-1 mt-1 flex items-center flex-col gap-y-0">
 
-      <a href="" target="_blank">
-          <div className="flex flex-row scale-75 gap-x-1">
+      <a href="https://taskify-omega.vercel.app/documents" target="_blank">
+          <div className="flex flex-row scale-75 gap-x-2 items-center">
             <div>
               <PlusCircle></PlusCircle>
             </div>
@@ -79,7 +79,7 @@ export const NavigationSidebar = async () => {
         </a>
 
         <a href="" target="_blank">
-          <div className="flex flex-row scale-75 gap-x-1">
+          <div className="flex flex-row scale-75 gap-x-2 items-center">
             <div>
               <MessageCircle></MessageCircle>
             </div>
@@ -90,7 +90,7 @@ export const NavigationSidebar = async () => {
         </a>
 
         <a href="" target="_blank">
-          <div className="flex flex-row scale-75 gap-x-1">
+          <div className="flex flex-row scale-75 gap-x-2 items-center">
             <div>
               <Video></Video>
             </div>
@@ -101,7 +101,7 @@ export const NavigationSidebar = async () => {
         </a>
 
         <a href="" target="_blank">
-          <div className="flex flex-row scale-75 gap-x-1">
+          <div className="flex flex-row scale-75 gap-x-2 items-center">
             <div>
               <CalendarDays></CalendarDays>
             </div>
@@ -112,23 +112,23 @@ export const NavigationSidebar = async () => {
         </a>
 
         <a href="https://dotpackages.netlify.app/" target="_blank">
-          <div className="flex flex-row scale-75 gap-x-1">
+          <div className="flex flex-row scale-75 gap-x-2 items-center">
             <div>
               <Boxes></Boxes>
             </div>
             <div className="">
-              dotPackages Package Manager
+              Package Manager
             </div>
           </div>
         </a>
 
         <a href="https://dotread.netlify.app/" target="_blank">
-          <div className="flex flex-row scale-75 gap-x-1">
+          <div className="flex flex-row scale-75 gap-x-2 items-center">
             <div>
               <GithubIcon></GithubIcon>
             </div>
             <div className="">
-              dotRead Code Explorer
+              Code Explorer
             </div>
           </div>
         </a>
